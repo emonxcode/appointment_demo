@@ -16,7 +16,7 @@ class HomeView extends ConsumerWidget {
       appBar: AppBar(title: const Text('Home')),
       body: appointments == null
           ? const Center(
-              child: CircularProgressIndicator(),
+              child: Text('Empty!'),
             )
           : ListView(
               children: [

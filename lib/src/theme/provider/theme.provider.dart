@@ -25,7 +25,9 @@ class ThemeProvider extends Notifier<ThemeProfile> {
 void _changeTheme(_Data data) {
   openDBSync(data.dir);
   data.setting.theme = data.theme;
-  db.writeTxnSync(() => db.appSettings.putSync(data.setting));
+  db.writeTxnSync(() {
+    return db.appSettings.putSync(data.setting);
+  });
 }
 
 class _Data {

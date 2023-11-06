@@ -62,18 +62,18 @@ class AppointmentDialog extends ConsumerWidget {
             onPressed: () async => await ref
                 .read(addAppointmentProvider(appointment).notifier)
                 .delete()
-                .then((_) => Navigator.of(context).pop()),
+                .then((_) => context.pop()),
           ),
         TextButton(
           child: const Text('Cancel'),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => context.pop(),
         ),
         TextButton(
           child: const Text('Save'),
           onPressed: () async => await ref
               .read(addAppointmentProvider(appointment).notifier)
               .save()
-              .then((_) => Navigator.of(context).pop()),
+              .then((_) => context.pop()),
         ),
       ],
     );

@@ -42,7 +42,7 @@ class AddAppointment extends _$AddAppointment {
   }
 
   Future<void> done() async {
-    state.isDone = true;
+    state.isDone = false;
     await db.writeTxn(() => db.appointments.put(state));
   }
 

@@ -18,7 +18,7 @@ class AppointmentTile extends ConsumerWidget {
       subtitle: appointment.description != null
           ? Text(appointment.description!)
           : null,
-      trailing: appointment.isDone
+      trailing: !appointment.isDone
           ? null
           : IconButton(
               icon: const Icon(Icons.done_all_rounded),
