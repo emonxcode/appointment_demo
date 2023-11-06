@@ -1,16 +1,75 @@
 # appointment_demo
 
-A new Flutter project.
+* Project Structure
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+lib
+├── main.dart
+├── config
+│   ├── app_config
+│   │   ├── app_config.dart
+│   │   ├── app_config_model.dart
+│   │   ├── app_config_model_ext.dart
+│   │   └── app_config_provider.dart
+│   └── theme
+│       ├── theme.dart
+│       ├── dark_theme.dart
+│       ├── light_theme.dart
+│       ├── xxxxx_theme.dart
+│       ├── custom_theme.dart
+│       ├── theme_model.dart
+│       ├── theme_model_ext.dart
+│       └── theme_provider.dart
+├── database
+│   ├── database.dart
+│   ├── database_service.dart
+│   └── database_provider.dart
+├── extensions
+│   ├── date
+│   │   └── date_ext.dart
+│   ├── string
+│   │   └── string_ext.dart
+│   ├── ...
+│   └── extensions.dart
+├── modules
+│   ├── module1
+│   │   ├── view
+│   │   │   └── module1_view.dart
+│   │   ├── model
+│   │   │   ├── module1_model.dart
+│   │   │   └── module1_model_ext.dart
+│   │   ├── provider
+│   │   │   └── module1_provider.dart
+│   │   └── components
+│   │       ├── component1
+│   │       │   ├── component1.dart
+│   │       │   ├── component1_1.dart
+│   │       │   └── ...
+│   │       └── ...
+│   └── ...
+├── components
+│   ├── component1
+│   │   ├── component1.dart
+│   │   ├── component1_1.dart
+│   │   └── ...
+│   └── ...
+├── services
+│   ├── service1.dart
+│   └── ...
+└── utils
+    ├── constants.dart
+    └── functions
+        ├── shared_function1.dart
+        └── ...
+test
+├── unit
+│   ├── module1
+│   │   └── module1_test.dart
+│   └── ...
+├── integration
+│   ├── module1
+│   │   └── module1_test.dart
+│   └── ...
+└── widget
+    ├── module1
+    │   └── module1_test.dart
+    └── ...
